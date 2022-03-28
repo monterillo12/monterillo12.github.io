@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>monterillo12</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./styles/linux-terminal.css">
+    <script src="https://kit.fontawesome.com/013b0522c5.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/M12DEV.png"/>
+</head>
+<body>
+
+    <div class="back"></div>
+
+    <nav>
+        <a class="top-nav-btn" href="#section-terminal"><i class="fa-solid fa-terminal"></i> Terminal</a>
+        <a class="top-nav-btn" href="#habilities"><i class="fa-solid fa-code"></i> Habilities</a>
+        <a class="top-nav-btn" href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a class="top-nav-btn" href="#preview"><i class="fa-solid fa-folder-open"></i> Preview</a>
+        <a class="top-nav-btn" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <button class="top-nav-btn top-nav-link" value="shop"><i class="fa-solid fa-cart-shopping"></i> Shop <i id="link-dispay-shop" class="link-dispay fa-solid fa-arrow-up-right-from-square"></i></button>
+    </nav>
+
+    <main>
+
+        <section id="home">
+
+            <!-- ANIMATED MINI INFO -->
+            <article id="section-miniinfo">
+
+                <h1>Hi, I'm monterillo12</h1>
+                <h1 style="display: flex; color: #0079ca;"><span id="move-text">Free time developer</span><span id="move-line"> |</span></h1>
+                <a href="#section-terminal" id="go-down"><i class="fa-solid fa-angles-down"></i></a>
+                <img id="profile-img" src="./assets/images/profile.png" alt="monterillo12">
+
+            </article>
+
+            <!-- LINUX TERMINAL -->
+            <article id="section-terminal">
+
+                <div class="console-container">
+        
+                    <div class="console-top">
+                        <span class="console-btn" value="close" style="--color: #c00"></span>
+                        <span class="console-btn" value="maximize" style="--color: #da0"></span>
+                        <span class="console-btn" value="minimize" style="--color: #0c0"></span>
+                        <span class="console-title">root@m12terminal /home/monterillo12/</span>
+                    </div>
+        
+                    <div class="console-active-console">
+        
+                        <div class="console-commandlist"></div>
+                        <div class="console-write">
+                            <div class="console-beforewrite"><span style="color: #0c0;">root@m12terminal:<span style="color: #0ad;">~</span></span>$</div>
+                            <input id="input-command" type="text" placeholder="_" value="help">
+                        </div>
+        
+                    </div>
+        
+                </div>
+    
+            </article>
+
+        </section>
+
+        <section id="habilities"></section>
+
+        <section id="about">
+            <h1>About me</h1>
+            <p>
+            I'm a young student of 19 years in First year of Multiplatform Aplication Development.<br>
+            I love learning by me self day by day and create new scripts for solving my problems<br>
+            I have just 1 year of experience and I want to be much more.
+            </p>
+        </section>
+
+        <section id="preview">
+            <h1>Preview</h1>
+            <div class="preview-container"></div>
+        </section>
+
+        <section id="contact">
+
+            <h1>Contact</h1>
+
+            <form>
+                <div class="top-form-inputs">
+                    <input id="contact-name" type="text" placeholder="Name">
+                    <input id="contact-email" type="text" placeholder="E-Mail">
+                </div>
+                <textarea id="contact-message" placeholder="Your message"></textarea><br>
+            </form>
+            <button id="send-wh">Send <i class="fa-solid fa-paper-plane"></i></button>
+
+        </section>
+
+    </main>
+
+    <section class="social-media">
+        <a target="_blank" href="https://www.youtube.com/channel/UCFs09LOeMzK3RsJf801y4sQ"><i class="fa-brands fa-youtube"></i></a>
+        <a target="_blank" href="https://discord.com/users/337679522226896911"><i class="fa-brands fa-discord"></i></a>
+        <a target="_blank" href="https://github.com/monterillo12"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://m12-store.tebex.io"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a target="_blank" href="https://forum.cfx.re/u/monterillo12"><i class="fa-solid fa-rectangle-list"></i></a>
+    </section>
+    <footer>Made with <span style="color: #f00;">❤</span> by monterillo12</footer>
+
+
+    <script src="./config.js"></script>
+    <script src="./code/main.js"></script>
+    <script src="./code/commands.js"></script>
+    <script src="./code/linux-console.js"></script>
+    <script src="./code/home-name.js"></script>
+</body>
+</html>

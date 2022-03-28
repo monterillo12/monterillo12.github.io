@@ -1,0 +1,92 @@
+#section-terminal {
+    padding-top: 15vh;
+}
+
+.console-container {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.3vw;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.522);
+    box-shadow: .5vw .5vw 1vw #000;
+    border: 1px solid var(--white);
+    border-radius: .6vw;
+    width: 70vw;
+    height: 70vh;
+}
+
+.console-top {
+    background-color: var(--white);
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-radius: .4vw .4vw 0 0;
+}
+
+.console-btn {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    margin-left: 1vh;
+    background-color: var(--color);
+    cursor: pointer;
+    transition: filter .3s, box-shadow .3s;
+}
+
+.console-btn:hover {
+    filter: saturate(140%);
+    box-shadow: 0 0 .4vw var(--color);
+}
+
+.console-btn:active {
+    transition: filter 0s, box-shadow 0s;
+    filter: saturate(50%);
+}
+
+.console-title {
+    margin-left: 1vw;
+}
+
+.console-active-console {
+    height: 90%;
+    overflow: auto;
+}
+/*.console-active-console::-webkit-scrollbar {-webkit-appearance: none;width:0;}*/
+
+.console-commandlist {
+    color: #fff;
+    padding: 1vw 0 0 1vw;
+    line-height: 4vh;
+}
+
+.console-write {
+    display: flex;
+    align-items: center;
+    line-height: 4vh;
+}
+
+.console-beforewrite {
+    width: 20%;
+    padding-left: 1vw;
+    color: var(--white);
+}
+
+.console-write input {
+    height: 100%;
+    width: 80%;
+    padding-left: 1vw;
+    font-size: 1.3vw;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    border: 0;
+    background-color: transparent;
+    color: var(--white);
+    outline: none;
+}
+
+.command-ls-link {
+    color: rgb(0, 166, 255);
+    margin-right: 2.5vw;
+    text-decoration: none;
+}
