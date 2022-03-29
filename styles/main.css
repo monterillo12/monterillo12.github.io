@@ -306,6 +306,7 @@ footer {
 }
 
 #left-nav-btn {
+    display: none;
     background-color: transparent;
     border: 0;
     color: var(--white);
@@ -364,7 +365,10 @@ footer {
     color: #000000;
 }
 
-@media only screen and (hover: none) and (pointer: coarse){
+@media only screen and (hover: none) {
+    #left-nav-btn {
+        display: block;
+    }
     #section-miniinfo {
         display: block;
         height: 100vh;
