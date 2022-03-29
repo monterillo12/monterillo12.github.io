@@ -3,6 +3,9 @@ let topNavLink = document.querySelectorAll('.top-nav-link');
 let goDown = document.querySelectorAll('#go-down');
 let habilitiesCont = document.querySelector('#habilities');
 let previewCont = document.querySelector('.preview-container');
+let leftNavBtn = document.querySelector('#left-nav-btn');
+let leftNavClose = document.querySelector('#left-nav-close');
+let leftNav = document.querySelector('.left-nav');
 
 for (i = 0; i < topNavLink.length; i++) {
     topNavLink[i].addEventListener('mouseover', function() {
@@ -35,6 +38,16 @@ for (i = 0; i < topNavBtn.length; i++) {
     });
 
 }
+
+leftNavBtn.addEventListener('click', () => {
+    leftNav.style.left = 0;
+    leftNavBtn.style.display = 'none'
+});
+
+leftNavClose.addEventListener('click', () => {
+    leftNav.style.left = '-80vw';
+    leftNavBtn.style.display = 'block'
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

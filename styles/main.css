@@ -32,7 +32,7 @@ body {
     
 }
 
-nav {
+.descktop-nav {
     position: fixed;
     top: 0;
     height: 8vh;
@@ -122,7 +122,7 @@ nav {
     background-color: #e3e3e3;
     margin-top: 20vh;
     padding-top: 20vh;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,13 +146,12 @@ nav {
 
 .habilities-item:hover {
     background-color: #000000aa;
-    color: #000;
+    color: var(--white);
     box-shadow: 0 0 .2vw var(--white);
 }
 
 .habilities-item img {
     height: 7vh;
-    width: 4vw;
     margin: 1.5vh;
 }
 
@@ -230,6 +229,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .top-form-inputs input {
@@ -303,4 +303,134 @@ footer {
     align-items: center;
     justify-content: center;
     height: 4vh;
+}
+
+#left-nav-btn {
+    background-color: transparent;
+    border: 0;
+    color: var(--white);
+    position: absolute;
+    left: 3vw;
+    top: 3vw;
+    font-size: 4vh;
+    cursor: pointer;
+    border-radius: .2vw;
+    transition: background-color .3s;
+
+}
+
+.left-nav {
+    position: fixed;
+    height: 100vh;
+    width: 80vw;
+    background-color: #000000aa;
+    top: 0;
+    left: -80vw;
+    transition: left .5s;
+}
+
+#left-nav-close {
+    background-color: transparent;
+    border: 0;
+    color: var(--white);
+    margin: 3vh 10vw;
+    font-size: 5vh;
+    cursor: pointer;
+    border-radius: .2vw;
+    transition: background-color .3s;
+}
+
+.left-nav-btn {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    margin-left: 1vw;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 4vh;
+    cursor: pointer;
+    display: block;
+    width: 60vw;
+    margin: 2vh auto 0 auto;
+    padding: 1.2vh 0;
+    border-radius: .2vw;
+    transition: background-color .3s;
+    text-decoration: none;
+    text-align: center;
+    z-index: 1;
+}
+
+.left-nav-btn:hover {
+    background-color: #e3e3e3;
+    color: #000000;
+}
+
+@media only screen and (max-width: 720px) {
+    #section-miniinfo {
+        display: block;
+        height: 100vh;
+    }
+    #section-miniinfo h1 {
+        margin-left: 5vw    ;
+        font-size: 15vw;
+        height: 25vh;
+    }
+    #section-miniinfo h1:first-child {
+        margin-top: 10vh;
+    }
+    #profile-img {
+        display: none;
+    }
+    #go-down {
+        margin-top: 10vh;
+        height: 20vw;
+        width: 20vw;
+    }
+    #go-down i {
+        font-size: 7vw;
+    }
+    #section-terminal {
+        padding-top: 0;
+    }
+    .console-container {
+        width: 95vw;
+        height: 30vh;
+    }
+    .console-btn {
+        height: 1vh;
+        width: 1vh;
+    }
+    .habilities-item {
+        width: 80vw;
+        font-size: 5vw;
+    }
+    .preview-item {
+        width: 90vw;
+        height: 50vw;
+    }
+    .social-media a {
+        width: 14vw;
+    }
+    .social-media i {
+        font-size: 10vw;
+    }
+    #contact {
+        width: 90vw;
+    }
+    .top-form-inputs input {
+        width: 90%;
+        margin-bottom: 2vh;
+    }
+    #contact textarea {
+        width: 90%;
+    }
+    #send-wh {
+        width: 90%;
+        font-size: 5vw;
+    }
+    .descktop-nav {
+        display: none;
+    }
+    #left-nav-btn {
+        display: block;
+    }
 }
